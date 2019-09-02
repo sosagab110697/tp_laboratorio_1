@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Prototipo.h"
-//prototipo
 
-int suma(int,int);
-int resta(int,int);
-float division(int,int);
-int multiplicacion(int,int);
-int factorial(int);
 
 int main()
 {
@@ -33,41 +27,43 @@ do{
     fflush(stdin);
     scanf("%c",&operacion);
 
+//llamada
 
 switch(operacion)
 {
-    case 'a':
+    case 'a': //suma de los numeros
         resultado = suma(numero1,numero2);
         printf("la suma de %d y %d es: %.2f\n",numero1,numero2,resultado);
         break;
 
-    case 'b':
+    case 'b': //resta de los numero
         resultado = resta(numero1,numero2);
         printf("la resta de %d y %d es: %.2f\n",numero1,numero2,resultado);
         break;
 
-    case'c':
+    case'c': //division de los numeros
         if(numero2 != 0){
         resultado = division(numero1,numero2);
-        printf("la division de %d y %d es: %.2f",numero1,numero2,resultado);
+        printf("la division de %d y %d es: %.2f\n",numero1,numero2,resultado);
         }else{
             printf("no se puede dividir por 0: \n");
         }
         break;
 
-    case 'd':
+    case 'd': //multiplicacion de los numeros
         resultado = multiplicacion(numero1,numero2);
         printf("la multiplicacion de %d y %d es: %.2f\n",numero1,numero2,resultado);
         break;
 
-    case 'e':
+    case 'e': //factorial de los numeros
+
         if(numero1 > 0){
         resultado = factorial(numero1);
         printf("el factorial de %d es: %.2f\n",numero1,resultado);
         }else if(numero1 == 0){
         printf("el factorial de 0 es 1");
         }else{
-        printf("no se puede hacer factorial de numeros negativos!");
+        printf("no se puede hacer factorial de numeros negativos! \n");
         }
 
         if(numero2 > 0){
@@ -76,7 +72,7 @@ switch(operacion)
         }else if(numero2 == 0){
         printf("el factorial de 0 es 1");
         }else{
-        printf("no se puede hacer factorial de numeros negativos!");
+        printf("no se puede hacer factorial de numeros negativos! \n");
         }
 
 }
@@ -87,38 +83,4 @@ switch(operacion)
     return 0;
 }
 
-//desarrollo
 
-int suma(int numero1,int numero2){
-    int resultado;
-    resultado = numero1 + numero2;
-    return resultado;
-}
-
-int resta(int numero1,int numero2){
-    int resultado;
-    resultado = numero1 - numero2;
-    return resultado;
-}
-
-float division (int numero1, int numero2){
-    int resultado;
-    resultado = (float)numero1 / numero2;
-    return resultado;
-}
-
-int multiplicacion(int numero1, int numero2){
-    int resultado;
-    resultado = numero1 * numero2;
-    return resultado;
-}
-
-int factorial(int numero1){
-    int resultado=1;
-    int i;
-
-for(i=numero1;i!=0;i--){
-    resultado = resultado * i;
-}
-return(resultado);
-}
