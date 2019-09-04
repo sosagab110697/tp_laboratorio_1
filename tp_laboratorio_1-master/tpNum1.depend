@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1567036349 source:c:\users\nicol\desktop\tpnum1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1567036504 source:c:\users\nicol\desktop\tpnum1\desarrollo.c
+
+1567556738 source:c:\users\nicol\desktop\tp_num1\tp_laboratorio_1\desarrollo.c
+	"Prototipo.h"
+
+1567455868 c:\users\nicol\desktop\tp_num1\tp_laboratorio_1\prototipo.h
+	<stdio.h>
+
+1567465776 source:c:\users\nicol\desktop\tp_num1\tp_laboratorio_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Prototipo.h"
+
+1567632180 source:d:\users\kevin\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\desarrollo.c
+	"Prototipo.h"
+
+1567632678 d:\users\kevin\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\prototipo.h
+	<stdio.h>
+
+1567632181 source:d:\users\kevin\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Prototipo.h"
+
