@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include "Prototipo.h"
 
-
+//llamada
 int main()
 {
+    //declaracion de variables
+
     int numero1;
     int numero2;
     float resultado;
@@ -12,11 +14,15 @@ int main()
 
 
 do{
+    //aca pidp los dos numeros
 
     printf("ingrese primer numero:\n");
     scanf("%d",&numero1);
     printf("ingrese segundo numero:\n");
     scanf("%d",&numero2);
+
+    //aca doy a elegir una operacion
+
     printf("elija una operacion:\n");
     printf("suma (a) \n");
     printf("resta (b) \n");
@@ -27,7 +33,7 @@ do{
     fflush(stdin);
     scanf("%c",&operacion);
 
-//llamada
+
 
 switch(operacion)
 {
